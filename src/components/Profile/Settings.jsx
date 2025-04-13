@@ -41,7 +41,7 @@ const Settings = () => {
         try {
             setIsLoading(prev => ({ ...prev, fetching: true }));
             const response = await axios.get(
-                "http://localhost:1000/api/v1/get-user-information",
+                "https://booknest-eku3.onrender.com/api/v1/get-user-information",
                 { headers: getAuthHeaders() }
             );
             setUserData(response.data);
@@ -75,7 +75,7 @@ const Settings = () => {
         try {
             setIsLoading(prev => ({ ...prev, updating: true }));
             await axios.put(
-                "http://localhost:1000/api/v1/update-address",
+                "https://booknest-eku3.onrender.com/api/v1/update-address",
                 { address: formData.address },
                 { headers: getAuthHeaders() }
             );

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -27,8 +28,13 @@ const SignUp = () => {
 
       console.log("Submitted Values:", values);
 
+
+    
+      // const url=process.env.URL;
+      // console.log(url);
+
       const response = await axios.post(
-        "http://localhost:1000/api/v1/sign-up",
+        `https://booknest-eku3.onrender.com/api/v1/sign-up`,
         values
       );
       alert(response.data.message);

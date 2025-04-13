@@ -16,7 +16,7 @@ const Profile = () => {
           authorization: `Bearer ${localStorage.getItem("token")}`,
         };
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-user-information",
+          "https://booknest-eku3.onrender.com/api/v1/get-user-information",
           { headers }
         );
         setProfile(response.data);

@@ -35,7 +35,7 @@ const UserOrderHistory = () => {
                     authorization: `Bearer ${localStorage.getItem("token")}`,
                 };
                 const response = await axios.get(
-                    "http://localhost:1000/api/v1/get-order-history",
+                    "https://booknest-eku3.onrender.com/api/v1/get-order-history",
                     { headers }
                 );
                 setOrderHistory(response.data.data);

@@ -10,7 +10,7 @@ const RecentlyAdded = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:1000/api/v1/get-recent-books");
+        const response = await axios.get("https://booknest-eku3.onrender.com/api/v1/get-recent-books");
         console.log(response.data);
         setData(response.data.data); 
       } catch (error) {

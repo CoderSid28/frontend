@@ -27,7 +27,7 @@ const Cart = () => {
         const fetchCart = async () => {
             try {
                 const { data } = await axios.get(
-                    "http://localhost:1000/api/v1/get-user-cart",
+                    "https://booknest-eku3.onrender.com/api/v1/get-user-cart",
                     { headers }
                 );
                 setCart(data.data || []);
@@ -56,7 +56,7 @@ const Cart = () => {
         setProcessing(true);
         try {
             const { data } = await axios.put(
-                `http://localhost:1000/api/v1/remove-from-cart/${bookid}`,
+                `https://booknest-eku3.onrender.com/api/v1/remove-from-cart/${bookid}`,
                 { userId: localStorage.getItem("id") },
                 { headers }
             );
@@ -82,7 +82,7 @@ const Cart = () => {
         setProcessing(true);
         try {
             const { data } = await axios.post(
-                'http://localhost:1000/api/v1/place-order',
+                'https://booknest-eku3.onrender.com/api/v1/place-order',
                 { 
                     order: cart,
                     totalAmount: total,
