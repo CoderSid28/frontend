@@ -62,7 +62,7 @@ const AllBooks = () => {
     "Holy Scriptures": [
       "mahabharata",
       "the ramayana",
-      "bhagvad gita",
+      "Bhagavad Gita",
       "vishnu purana",
       "garuda purana"
     ],
