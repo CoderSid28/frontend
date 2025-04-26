@@ -76,7 +76,7 @@ const AllBooks = () => {
     "Manga Novels": [
       "berserk : vol-1",
       "monster : vol-1",
-      "vagabond: volume 1"
+      "Vagabond: Volume 1"
     ],
     "Gate Papers": [
       "gate-2025: psp",
